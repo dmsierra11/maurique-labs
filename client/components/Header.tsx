@@ -1,0 +1,151 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
+interface HeaderProps {
+  language: "en" | "es";
+  onLanguageChange: (lang: "en" | "es") => void;
+}
+
+export default function Header({ language, onLanguageChange }: HeaderProps) {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navLinks = {
+    en: [
+      { label: "What We Do", href: "#what-we-do" },
+      { label: "Projects", href: "#projects" },
+      { label: "Philosophy", href: "#philosophy" },
+      { label: "Collaborate", href: "#collaborate" },
+    ],
+    es: [
+      { label: "Qué Hacemos", href: "#what-we-do" },
+      { label: "Proyectos", href: "#projects" },
+      { label: "Filosofía", href: "#philosophy" },
+      { label: "Colabora", href: "#collaborate" },
+    ],
+  };
+
+  const ctaLabel = language === "en" ? "Let's Talk" : "Hablemos";
+
+  return (
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
+      <div className="section-container flex items-center justify-between h-16">
+        {/* Logo */}
+        <div className="font-bold text-xl tracking-tight">
+          <span className="text-accent">Maurique</span> Labs
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks[language].map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium text-foreground/70 hover:text-accent transition-colors duration-300"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* CTA and Language Toggle */}
+        <div className="flex items-center gap-4">
+          {/* Language Toggle */}
+          <div className="hidden sm:flex items-center gap-2 border-l border-border pl-4">
+            <button
+              onClick={() => onLanguageChange("en")}
+              className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
+                language === "en"
+                  ? "text-accent bg-accent/10"
+                  : "text-foreground/50 hover:text-foreground/70"
+              }`}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => onLanguageChange("es")}
+              className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
+                language === "es"
+                  ? "text-accent bg-accent/10"
+                  : "text-foreground/50 hover:text-foreground/70"
+              }`}
+            >
+              ES
+            </button>
+          </div>
+
+          {/* CTA Button */}
+          <a
+            href="https://calendly.com/your-handle/intro"
+            className="hidden sm:inline-block btn-primary text-sm"
+          >
+            {ctaLabel}
+          </a>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-foreground hover:text-accent transition-colors"
+          >
+            {mobileMenuOpen ? (
+              <X className="w-5 h-5" />
+            ) : (
+              <Menu className="w-5 h-5" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <div className="md:hidden border-t border-border bg-background/95">
+          <nav className="section-container py-4 flex flex-col gap-4">
+            {navLinks[language].map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-foreground/70 hover:text-accent transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+            <a
+              href="https://calendly.com/your-handle/intro"
+              className="btn-primary text-sm text-center"
+            >
+              {ctaLabel}
+            </a>
+            <div className="flex items-center gap-2 pt-2 border-t border-border">
+              <button
+                onClick={() => {
+                  onLanguageChange("en");
+                  setMobileMenuOpen(false);
+                }}
+                className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
+                  language === "en"
+                    ? "text-accent bg-accent/10"
+                    : "text-foreground/50"
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => {
+                  onLanguageChange("es");
+                  setMobileMenuOpen(false);
+                }}
+                className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
+                  language === "es"
+                    ? "text-accent bg-accent/10"
+                    : "text-foreground/50"
+                }`}
+              >
+                ES
+              </button>
+            </div>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+}
