@@ -40,14 +40,18 @@ export default function Hero({ language }: HeroProps) {
       <div className="section-container relative z-10 text-center">
         <h1 className="animate-slide-up mb-6">{copy.h1}</h1>
 
-        <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up opacity-0"
-          style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+        <p
+          className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up opacity-0"
+          style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
+        >
           {copy.subheadline}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-slide-up opacity-0"
-          style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-slide-up opacity-0"
+          style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+        >
           <a href="mailto:hello@mauriquelabs.com" className="btn-primary">
             <Mail className="w-4 h-4 inline-block mr-2" />
             {copy.ctaPrimary}
@@ -62,8 +66,10 @@ export default function Hero({ language }: HeroProps) {
         </div>
 
         {/* Caption */}
-        <p className="text-sm text-foreground/50 animate-slide-up opacity-0"
-          style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
+        <p
+          className="text-sm text-foreground/50 animate-slide-up opacity-0"
+          style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
+        >
           {copy.caption}
         </p>
       </div>

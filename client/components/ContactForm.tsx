@@ -43,7 +43,7 @@ export default function ContactForm({ language }: ContactFormProps) {
   const labels = content[language];
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormState((prev) => ({

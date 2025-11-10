@@ -18,7 +18,8 @@ export default function Footer({ language }: FooterProps) {
               <span className="text-accent">Maurique</span> Labs
             </div>
             <p className="text-foreground/60 text-sm">
-              Innovation studio in Barcelona, building AI-powered products and cultural experiences.
+              Innovation studio in Barcelona, building AI-powered products and
+              cultural experiences.
             </p>
           </div>
 

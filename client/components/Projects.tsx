@@ -15,7 +15,7 @@ export default function Projects({ language }: ProjectsProps) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const element = document.getElementById("projects");
@@ -48,8 +48,7 @@ export default function Projects({ language }: ProjectsProps) {
       },
       {
         title: "Onda Nueva / VR Showroom",
-        description:
-          "Immersive VR + music experiences (Tribe XR, Beat Saber).",
+        description: "Immersive VR + music experiences (Tribe XR, Beat Saber).",
         link: "https://link-to-onda-nueva",
       },
     ],
@@ -82,14 +81,17 @@ export default function Projects({ language }: ProjectsProps) {
   };
 
   const projects = content[language];
-  const sectionTitle = language === "en" ? "Selected Projects" : "Proyectos Destacados";
+  const sectionTitle =
+    language === "en" ? "Selected Projects" : "Proyectos Destacados";
 
   return (
     <section id="projects" className="section" id="projects-section">
       <div className="section-container">
-        <h2 className={`mb-16 transition-all duration-700 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}>
+        <h2
+          className={`mb-16 transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           {sectionTitle}
         </h2>
 

@@ -14,7 +14,7 @@ export default function WhatWeDo({ language }: WhatWeDoProps) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const element = document.getElementById("what-we-do");
@@ -65,14 +65,13 @@ export default function WhatWeDo({ language }: WhatWeDoProps) {
   const cards = content[language];
 
   return (
-    <section
-      id="what-we-do"
-      className="section"
-    >
+    <section id="what-we-do" className="section">
       <div className="section-container">
-        <h2 className={`mb-16 transition-all duration-700 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}>
+        <h2
+          className={`mb-16 transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           What We Do
         </h2>
 

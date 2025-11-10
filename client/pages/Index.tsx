@@ -14,7 +14,9 @@ export default function Index() {
 
   useEffect(() => {
     // Persist language preference
-    const savedLanguage = localStorage.getItem("maurique-language") as Language | null;
+    const savedLanguage = localStorage.getItem(
+      "maurique-language",
+    ) as Language | null;
     if (savedLanguage) {
       setLanguage(savedLanguage);
     }
