@@ -18,7 +18,7 @@ export default function Projects({ language }: ProjectsProps) {
       { threshold: 0.1 }
     );
 
-    const element = document.getElementById("projects-section");
+    const element = document.getElementById("projects");
     if (element) observer.observe(element);
 
     return () => {

@@ -17,7 +17,7 @@ export default function Philosophy({ language }: PhilosophyProps) {
       { threshold: 0.1 }
     );
 
-    const element = document.getElementById("philosophy-section");
+    const element = document.getElementById("philosophy");
     if (element) observer.observe(element);
 
     return () => {
@@ -27,7 +27,7 @@ export default function Philosophy({ language }: PhilosophyProps) {
 
   const content = {
     en: "We believe technology should inspire, not intimidate. Maurique Labs exists to make innovation human — to help people build, connect, and create systems with soul.",
-    es: "Creemos que la tecnología debe inspirar, no intimidar. Maurique Labs existe para hacer la innovación humana �� para ayudar a las personas a construir, conectar y crear sistemas con alma.",
+    es: "Creemos que la tecnología debe inspirar, no intimidar. Maurique Labs existe para hacer la innovación humana — para ayudar a las personas a construir, conectar y crear sistemas con alma.",
   };
 
   const text = content[language];
@@ -36,7 +36,6 @@ export default function Philosophy({ language }: PhilosophyProps) {
     <section
       id="philosophy"
       className="section bg-card/30 border-y border-border"
-      id="philosophy-section"
     >
       <div className="section-container">
         <div className={`max-w-3xl transition-all duration-700 ${

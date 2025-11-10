@@ -19,7 +19,7 @@ export default function Collaborate({ language }: CollaborateProps) {
       { threshold: 0.1 }
     );
 
-    const element = document.getElementById("collaborate-section");
+    const element = document.getElementById("collaborate");
     if (element) observer.observe(element);
 
     return () => {
@@ -58,7 +58,6 @@ export default function Collaborate({ language }: CollaborateProps) {
     <section
       id="collaborate"
       className="section"
-      id="collaborate-section"
     >
       <div className="section-container">
         <h2 className={`mb-6 transition-all duration-700 ${

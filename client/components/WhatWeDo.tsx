@@ -17,7 +17,7 @@ export default function WhatWeDo({ language }: WhatWeDoProps) {
       { threshold: 0.1 }
     );
 
-    const element = document.getElementById("what-we-do-section");
+    const element = document.getElementById("what-we-do");
     if (element) observer.observe(element);
 
     return () => {
@@ -68,7 +68,6 @@ export default function WhatWeDo({ language }: WhatWeDoProps) {
     <section
       id="what-we-do"
       className="section"
-      id="what-we-do-section"
     >
       <div className="section-container">
         <h2 className={`mb-16 transition-all duration-700 ${
