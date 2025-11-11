@@ -57,8 +57,7 @@ export default function ContactForm({ language }: ContactFormProps) {
     setSubmitStatus("loading");
 
     try {
-      // Placeholder: Replace with your actual endpoint
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formspree.io/f/xzzybyza", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
