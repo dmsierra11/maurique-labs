@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Mission from "@/components/Mission";
+import Services from "@/components/Services";
 import Showcase from "@/components/Showcase";
 import CollaborateV2 from "@/components/CollaborateV2";
 import Footer from "@/components/Footer";
@@ -32,6 +33,7 @@ export default function Index() {
       <main>
         <Hero language={language} />
         <Mission language={language} />
+        <Services language={language} />
         <Showcase language={language} />
         <CollaborateV2 language={language} />
       </main>
