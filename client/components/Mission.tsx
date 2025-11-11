@@ -26,7 +26,7 @@ export default function Mission({ language }: MissionProps) {
   }, []);
 
   const content = {
-    en: "We create cultural and corporate experiences that inspire connection, creativity, and innovation. From music sessions and festivals to workshops, conferences, and hackathons — Maurique Labs helps brands and communities engage in meaningful ways.",
+    en: "We create cultural and corporate experiences that inspire connection, creativity, and innovation. From music sessions and festivals to workshops, conferences, and hackathons. Maurique Labs helps brands and communities engage in meaningful ways.",
     es: "Creamos experiencias culturales y corporativas que inspiran conexión, creatividad e innovación. Desde sesiones de música y festivales hasta talleres, conferencias y hackathones — Maurique Labs ayuda a marcas y comunidades a conectar de formas significativas.",
   };
 

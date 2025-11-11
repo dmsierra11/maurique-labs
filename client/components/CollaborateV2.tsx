@@ -91,15 +91,6 @@ export default function Collaborate({ language }: CollaborateProps) {
                 </a>
               </div>
             </div>
-
-            {/* CTA Button */}
-            <a
-              href="#collaborate"
-              className="btn-primary inline-flex items-center gap-2"
-            >
-              Let's Talk
-              <ArrowRight className="w-4 h-4" />
-            </a>
           </div>
 
           {/* Contact Form */}
