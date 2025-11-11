@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Mail, MapPin, Globe } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import ContactForm from "./ContactForm";
 
 interface CollaborateProps {
@@ -86,7 +86,7 @@ export default function Collaborate({ language }: CollaborateProps) {
           >
             <h3 className="text-2xl font-bold mb-8">{copy.contactTitle}</h3>
 
-            <div className="space-y-6 mb-8">
+            <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                 <div>
@@ -106,32 +106,6 @@ export default function Collaborate({ language }: CollaborateProps) {
                   {copy.email}
                 </a>
               </div>
-
-              <div className="flex items-start gap-4">
-                <Globe className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
-                <a
-                  href="https://mauriquelabs.com"
-                  className="font-semibold text-foreground hover:text-accent transition-colors"
-                >
-                  {copy.website}
-                </a>
-              </div>
-            </div>
-
-            {/* CTA Button Row */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://calendly.com/your-handle/intro"
-                className="btn-primary text-center"
-              >
-                {copy.bookCall}
-              </a>
-              <a
-                href={`mailto:${copy.email}`}
-                className="btn-secondary text-center"
-              >
-                {copy.emailUs}
-              </a>
             </div>
           </div>
 
