@@ -39,7 +39,7 @@ export default function Showcase({ language }: ShowcaseProps) {
         title: "Moonamour x Bejaus",
         description: "Collaborative cultural experiences merging art, music, and innovation.",
         icon: Zap,
-        link: "#",
+        link: "https://www.youtube.com/channel/UCdil_RtSsa7P9Il6hMU4-eA",
         image: "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
       },
       {
@@ -62,7 +62,7 @@ export default function Showcase({ language }: ShowcaseProps) {
         title: "Moonamour x Bejaus",
         description: "Experiencias culturales colaborativas que fusionan arte, música e innovación.",
         icon: Zap,
-        link: "#",
+        link: "https://www.youtube.com/channel/UCdil_RtSsa7P9Il6hMU4-eA",
         image: "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
       },
       {
