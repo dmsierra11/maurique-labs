@@ -15,7 +15,7 @@ export default function Services({ language }: ServicesProps) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const element = document.getElementById("services");
@@ -31,7 +31,8 @@ export default function Services({ language }: ServicesProps) {
       title: "What We Do",
       forCreators: {
         title: "For Creators",
-        description: "We empower independent artists and creators with tools to grow and showcase their work.",
+        description:
+          "We empower independent artists and creators with tools to grow and showcase their work.",
         services: [
           "Landing pages & digital presence",
           "Social media & content strategy",
@@ -41,7 +42,8 @@ export default function Services({ language }: ServicesProps) {
       },
       forBrands: {
         title: "For Brands & Companies",
-        description: "We design cultural experiences that deepen audience connection.",
+        description:
+          "We design cultural experiences that deepen audience connection.",
         services: [
           "Hackathons & innovation events",
           "Festivals & cultural experiences",
@@ -54,7 +56,8 @@ export default function Services({ language }: ServicesProps) {
       title: "Qué Hacemos",
       forCreators: {
         title: "Para Creadores",
-        description: "Empoderamos artistas y creadores independientes con herramientas para crecer y mostrar su trabajo.",
+        description:
+          "Empoderamos artistas y creadores independientes con herramientas para crecer y mostrar su trabajo.",
         services: [
           "Landing pages y presencia digital",
           "Estrategia en redes sociales y contenido",
@@ -64,7 +67,8 @@ export default function Services({ language }: ServicesProps) {
       },
       forBrands: {
         title: "Para Marcas y Empresas",
-        description: "Diseñamos experiencias culturales que profundizan la conexión con la audiencia.",
+        description:
+          "Diseñamos experiencias culturales que profundizan la conexión con la audiencia.",
         services: [
           "Hackathons y eventos de innovación",
           "Festivales y experiencias culturales",
@@ -80,18 +84,24 @@ export default function Services({ language }: ServicesProps) {
   return (
     <section id="services" className="section">
       <div className="section-container">
-        <h2 className={`mb-16 transition-all duration-700 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}>
+        <h2
+          className={`mb-16 transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           {copy.title}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* For Creators */}
-          <div className={`transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-          style={{ transitionDelay: isVisible ? "150ms" : "0ms" }}>
+          <div
+            className={`transition-all duration-700 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+            style={{ transitionDelay: isVisible ? "150ms" : "0ms" }}
+          >
             <div className="card-base card-hover">
               <div className="flex items-center gap-3 mb-6">
                 <Users className="w-8 h-8 text-accent" />
@@ -102,7 +112,10 @@ export default function Services({ language }: ServicesProps) {
               </p>
               <ul className="space-y-3">
                 {copy.forCreators.services.map((service, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-foreground/80">
+                  <li
+                    key={idx}
+                    className="flex items-start gap-3 text-foreground/80"
+                  >
                     <span className="text-accent font-bold mt-1">•</span>
                     <span>{service}</span>
                   </li>
@@ -112,10 +125,14 @@ export default function Services({ language }: ServicesProps) {
           </div>
 
           {/* For Brands */}
-          <div className={`transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-          style={{ transitionDelay: isVisible ? "300ms" : "0ms" }}>
+          <div
+            className={`transition-all duration-700 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
+            }`}
+            style={{ transitionDelay: isVisible ? "300ms" : "0ms" }}
+          >
             <div className="card-base card-hover">
               <div className="flex items-center gap-3 mb-6">
                 <Zap className="w-8 h-8 text-accent2" />
@@ -126,7 +143,10 @@ export default function Services({ language }: ServicesProps) {
               </p>
               <ul className="space-y-3">
                 {copy.forBrands.services.map((service, idx) => (
-                  <li key={idx} className="flex items-start gap-3 text-foreground/80">
+                  <li
+                    key={idx}
+                    className="flex items-start gap-3 text-foreground/80"
+                  >
                     <span className="text-accent2 font-bold mt-1">•</span>
                     <span>{service}</span>
                   </li>

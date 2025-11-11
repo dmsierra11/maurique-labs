@@ -15,7 +15,7 @@ export default function Showcase({ language }: ShowcaseProps) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const element = document.getElementById("showcase");
@@ -30,47 +30,59 @@ export default function Showcase({ language }: ShowcaseProps) {
     en: [
       {
         title: "Bejaus Sessions",
-        description: "Live music and creative sessions showcasing emerging artists and the intersection of culture and community.",
+        description:
+          "Live music and creative sessions showcasing emerging artists and the intersection of culture and community.",
         icon: Music,
         link: "https://www.youtube.com/@bejaussessions",
-        image: "linear-gradient(135deg, rgba(15, 106, 79, 0.3) 0%, rgba(200, 107, 74, 0.3) 100%)",
+        image:
+          "linear-gradient(135deg, rgba(15, 106, 79, 0.3) 0%, rgba(200, 107, 74, 0.3) 100%)",
       },
       {
         title: "Moonamour x Bejaus",
-        description: "Collaborative experiences bringing together music, visual art, and community storytelling.",
+        description:
+          "Collaborative experiences bringing together music, visual art, and community storytelling.",
         icon: Zap,
         link: "https://www.youtube.com/channel/UCdil_RtSsa7P9Il6hMU4-eA",
-        image: "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
+        image:
+          "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
       },
       {
         title: "Creator Projects",
-        description: "Helping independent creators build their digital presence, from website design to content strategy.",
+        description:
+          "Helping independent creators build their digital presence, from website design to content strategy.",
         icon: Sparkles,
         link: "#",
-        image: "linear-gradient(135deg, rgba(15, 106, 79, 0.2) 0%, rgba(200, 107, 74, 0.2) 100%)",
+        image:
+          "linear-gradient(135deg, rgba(15, 106, 79, 0.2) 0%, rgba(200, 107, 74, 0.2) 100%)",
       },
     ],
     es: [
       {
         title: "Bejaus Sessions",
-        description: "Sesiones de música en vivo y experiencias creativas que muestran artistas emergentes y la intersección de la cultura y comunidad.",
+        description:
+          "Sesiones de música en vivo y experiencias creativas que muestran artistas emergentes y la intersección de la cultura y comunidad.",
         icon: Music,
         link: "https://www.youtube.com/@bejaussessions",
-        image: "linear-gradient(135deg, rgba(15, 106, 79, 0.3) 0%, rgba(200, 107, 74, 0.3) 100%)",
+        image:
+          "linear-gradient(135deg, rgba(15, 106, 79, 0.3) 0%, rgba(200, 107, 74, 0.3) 100%)",
       },
       {
         title: "Moonamour x Bejaus",
-        description: "Experiencias colaborativas que reúnen música, arte visual y narrativa comunitaria.",
+        description:
+          "Experiencias colaborativas que reúnen música, arte visual y narrativa comunitaria.",
         icon: Zap,
         link: "https://www.youtube.com/channel/UCdil_RtSsa7P9Il6hMU4-eA",
-        image: "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
+        image:
+          "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
       },
       {
         title: "Proyectos de Creadores",
-        description: "Ayudando a creadores independientes a construir su presencia digital, desde diseño web hasta estrategia de contenido.",
+        description:
+          "Ayudando a creadores independientes a construir su presencia digital, desde diseño web hasta estrategia de contenido.",
         icon: Sparkles,
         link: "#",
-        image: "linear-gradient(135deg, rgba(15, 106, 79, 0.2) 0%, rgba(200, 107, 74, 0.2) 100%)",
+        image:
+          "linear-gradient(135deg, rgba(15, 106, 79, 0.2) 0%, rgba(200, 107, 74, 0.2) 100%)",
       },
     ],
   };
@@ -81,9 +93,11 @@ export default function Showcase({ language }: ShowcaseProps) {
   return (
     <section id="showcase" className="section">
       <div className="section-container">
-        <h2 className={`mb-16 transition-all duration-700 ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}>
+        <h2
+          className={`mb-16 transition-all duration-700 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
           {sectionTitle}
         </h2>
 
@@ -95,7 +109,11 @@ export default function Showcase({ language }: ShowcaseProps) {
                 key={index}
                 href={item.link}
                 target={item.link.startsWith("http") ? "_blank" : undefined}
-                rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  item.link.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 className={`card-base card-hover group transition-all duration-700 overflow-hidden ${
                   isVisible
                     ? "opacity-100 translate-y-0"
@@ -106,7 +124,7 @@ export default function Showcase({ language }: ShowcaseProps) {
                 }}
               >
                 {/* Background image/gradient */}
-                <div 
+                <div
                   className="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity"
                   style={{ background: item.image }}
                 ></div>

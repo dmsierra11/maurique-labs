@@ -8,15 +8,19 @@ export default function Hero({ language }: HeroProps) {
   const content = {
     en: {
       h1: "Maurique Labs",
-      subheadline: "Empowering creators through experiences, community, and digital presence.",
-      description: "We design and produce cultural and corporate events that connect brands, artists, and audiences, while helping creators grow their digital identity.",
+      subheadline:
+        "Empowering creators through experiences, community, and digital presence.",
+      description:
+        "We design and produce cultural and corporate events that connect brands, artists, and audiences, while helping creators grow their digital identity.",
       ctaPrimary: "See Our Work",
       ctaSecondary: "Let's Collaborate",
     },
     es: {
       h1: "Maurique Labs",
-      subheadline: "Empoderando creadores a través de experiencias, comunidad y presencia digital.",
-      description: "Diseñamos y producimos eventos culturales y corporativos que conectan marcas, artistas y audiencias, mientras ayudamos a los creadores a crecer en su identidad digital.",
+      subheadline:
+        "Empoderando creadores a través de experiencias, comunidad y presencia digital.",
+      description:
+        "Diseñamos y producimos eventos culturales y corporativos que conectan marcas, artistas y audiencias, mientras ayudamos a los creadores a crecer en su identidad digital.",
       ctaPrimary: "Ver Nuestro Trabajo",
       ctaSecondary: "Colaboremos",
     },
@@ -40,24 +44,36 @@ export default function Hero({ language }: HeroProps) {
           {copy.h1}
         </h1>
 
-        <p className="text-xl sm:text-2xl text-foreground/80 max-w-3xl mx-auto mb-6 leading-relaxed animate-slide-up opacity-0"
-          style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}>
+        <p
+          className="text-xl sm:text-2xl text-foreground/80 max-w-3xl mx-auto mb-6 leading-relaxed animate-slide-up opacity-0"
+          style={{ animationDelay: "0.2s", animationFillMode: "forwards" }}
+        >
           {copy.subheadline}
         </p>
 
-        <p className="text-base sm:text-lg text-foreground/60 max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up opacity-0"
-          style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
+        <p
+          className="text-base sm:text-lg text-foreground/60 max-w-2xl mx-auto mb-12 leading-relaxed animate-slide-up opacity-0"
+          style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
+        >
           {copy.description}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up opacity-0"
-          style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
-          <a href="#showcase" className="btn-primary inline-flex items-center justify-center gap-2">
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up opacity-0"
+          style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
+        >
+          <a
+            href="#showcase"
+            className="btn-primary inline-flex items-center justify-center gap-2"
+          >
             {copy.ctaPrimary}
             <ArrowRight className="w-4 h-4" />
           </a>
-          <a href="#collaborate" className="btn-secondary inline-flex items-center justify-center gap-2">
+          <a
+            href="#collaborate"
+            className="btn-secondary inline-flex items-center justify-center gap-2"
+          >
             {copy.ctaSecondary}
             <ArrowRight className="w-4 h-4" />
           </a>
