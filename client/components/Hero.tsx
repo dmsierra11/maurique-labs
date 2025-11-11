@@ -50,7 +50,7 @@ export default function Hero({ language }: HeroProps) {
           className="flex justify-center mb-8 animate-slide-up opacity-0"
           style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
         >
-          <a href="mailto:hello@mauriquelabs.com" className="btn-primary">
+          <a href="#collaborate" className="btn-primary">
             <Mail className="w-4 h-4 inline-block mr-2" />
             {copy.ctaPrimary}
           </a>
