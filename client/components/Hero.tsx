@@ -1,4 +1,4 @@
-import { Mail, Users } from "lucide-react";
+import { Mail } from "lucide-react";
 
 interface HeroProps {
   language: "en" | "es";
@@ -11,7 +11,6 @@ export default function Hero({ language }: HeroProps) {
       subheadline:
         "Maurique Labs is an innovation studio empowering people to build meaningful products through AI, creativity, and community. Based in Barcelona. Connected to the world.",
       ctaPrimary: "Let's Collaborate",
-      ctaSecondary: "Join the Community",
       caption: "Systems with Soul — since 2025",
     },
     es: {
@@ -19,7 +18,6 @@ export default function Hero({ language }: HeroProps) {
       subheadline:
         "Maurique Labs es un estudio de innovación que empodera a personas para construir productos significativos con IA, creatividad y comunidad. Basado en Barcelona. Conectado al mundo.",
       ctaPrimary: "Colaboremos",
-      ctaSecondary: "Únete a la comunidad",
       caption: "Sistemas con Alma — desde 2025",
     },
   };
@@ -47,21 +45,14 @@ export default function Hero({ language }: HeroProps) {
           {copy.subheadline}
         </p>
 
-        {/* CTA Buttons */}
+        {/* CTA Button */}
         <div
-          className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-slide-up opacity-0"
+          className="flex justify-center mb-8 animate-slide-up opacity-0"
           style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}
         >
           <a href="mailto:hello@mauriquelabs.com" className="btn-primary">
             <Mail className="w-4 h-4 inline-block mr-2" />
             {copy.ctaPrimary}
-          </a>
-          <a
-            href="https://your-notion-or-discord-link"
-            className="btn-secondary"
-          >
-            <Users className="w-4 h-4 inline-block mr-2" />
-            {copy.ctaSecondary}
           </a>
         </div>
 
