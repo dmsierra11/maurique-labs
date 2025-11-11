@@ -11,16 +11,14 @@ export default function Header({ language, onLanguageChange }: HeaderProps) {
 
   const navLinks = {
     en: [
-      { label: "What We Do", href: "#what-we-do" },
-      { label: "Projects", href: "#projects" },
-      { label: "Philosophy", href: "#philosophy" },
-      { label: "Collaborate", href: "#collaborate" },
+      { label: "Our Work", href: "#showcase" },
+      { label: "Mission", href: "#mission" },
+      { label: "Let's Talk", href: "#collaborate" },
     ],
     es: [
-      { label: "Qué Hacemos", href: "#what-we-do" },
-      { label: "Proyectos", href: "#projects" },
-      { label: "Filosofía", href: "#philosophy" },
-      { label: "Colabora", href: "#collaborate" },
+      { label: "Nuestro Trabajo", href: "#showcase" },
+      { label: "Misión", href: "#mission" },
+      { label: "Hablemos", href: "#collaborate" },
     ],
   };
 
