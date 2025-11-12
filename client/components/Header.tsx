@@ -73,7 +73,7 @@ export default function Header({ language, onLanguageChange }: HeaderProps) {
 
           {/* CTA Button */}
           <a
-            href="https://calendly.com/your-handle/intro"
+            href="https://calendly.com/hello-mauriquelabs/30min"
             className="hidden sm:inline-block btn-primary text-sm"
           >
             {ctaLabel}
@@ -108,7 +108,7 @@ export default function Header({ language, onLanguageChange }: HeaderProps) {
               </a>
             ))}
             <a
-              href="https://calendly.com/your-handle/intro"
+              href="https://calendly.com/hello-mauriquelabs/30min"
               className="btn-primary text-sm text-center"
             >
               {ctaLabel}
