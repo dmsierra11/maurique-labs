@@ -26,8 +26,8 @@ export default function Mission({ language }: MissionProps) {
   }, []);
 
   const content = {
-    en: "Maurique Labs builds bridges between music, technology, and culture. We create experiences that inspire connection and help brands and creators express their identity through design, storytelling, and community.",
-    es: "Maurique Labs construye puentes entre música, tecnología y cultura. Creamos experiencias que inspiran conexión y ayudan a marcas y creadores a expresar su identidad a través del diseño, la narrativa y la comunidad.",
+    en: "Maurique Labs creates experiences that connect people, ideas, and disciplines. We believe the most powerful innovation happens when creativity and technology meet.",
+    es: "Maurique Labs crea experiencias que conectan personas, ideas y disciplinas. Creemos que la innovación más poderosa ocurre cuando la creatividad y la tecnología se encuentran.",
   };
 
   const text = content[language];

@@ -31,7 +31,7 @@ export default function Collaborate({ language }: CollaborateProps) {
     en: {
       sectionTitle: "Let's Collaborate",
       sectionDesc:
-        "We believe empowering creators starts by giving them the space, both physical and digital, to shine. Whether it's a hackathon, a studio session, or a digital launch, Maurique Labs collaborates with brands and communities to make creativity visible.",
+        "We work with brands, artists, and communities that want to create meaningful experiences. Let's build something that connects people.",
       contactTitle: "Get in Touch",
       location: "Barcelona",
       email: "hello@mauriquelabs.com",
@@ -39,7 +39,7 @@ export default function Collaborate({ language }: CollaborateProps) {
     es: {
       sectionTitle: "Colaboremos",
       sectionDesc:
-        "Creemos que empoderar a los creadores comienza dándoles el espacio, tanto físico como digital, para brillar. Ya sea un hackathon, una sesión de estudio o un lanzamiento digital, Maurique Labs colabora con marcas y comunidades para hacer visible la creatividad.",
+        "Trabajamos con marcas, artistas y comunidades que desean crear experiencias significativas. Vamos a construir algo que conecte a las personas.",
       contactTitle: "Ponte en Contacto",
       location: "Barcelona",
       email: "hello@mauriquelabs.com",

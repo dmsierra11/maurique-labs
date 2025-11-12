@@ -47,9 +47,9 @@ export default function Showcase({ language }: ShowcaseProps) {
           "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
       },
       {
-        title: "Creator Projects",
+        title: "Upcoming Collaborations",
         description:
-          "Helping independent creators build their digital presence, from website design to content strategy.",
+          "Placeholder for future projects blending art, technology, and community.",
         icon: Sparkles,
         link: "#",
         image:
@@ -76,9 +76,9 @@ export default function Showcase({ language }: ShowcaseProps) {
           "linear-gradient(135deg, rgba(200, 107, 74, 0.2) 0%, rgba(15, 106, 79, 0.2) 100%)",
       },
       {
-        title: "Proyectos de Creadores",
+        title: "Colaboraciones Futuras",
         description:
-          "Ayudando a creadores independientes a construir su presencia digital, desde diseño web hasta estrategia de contenido.",
+          "Futuro de proyectos que mezclen arte, tecnología y comunidad.",
         icon: Sparkles,
         link: "#",
         image:

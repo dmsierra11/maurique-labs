@@ -30,50 +30,50 @@ export default function Services({ language }: ServicesProps) {
     en: {
       title: "What We Do",
       forCreators: {
-        title: "For Creators",
+        title: "Events",
         description:
-          "We empower independent artists and creators with tools to grow and showcase their work.",
+          "Cultural and corporate experiences that bring people together and create lasting connections.",
         services: [
-          "Landing pages & digital presence",
-          "Social media & content strategy",
-          "Platform management & optimization",
-          "Visual identity & branding",
+          "Cultural events & festivals",
+          "Brand activations",
+          "Workshops & conferences",
+          "Community experiences",
         ],
       },
       forBrands: {
-        title: "For Brands & Companies",
+        title: "Digital Projects",
         description:
-          "We design cultural experiences that deepen audience connection.",
+          "Digital solutions that help brands and creators grow their presence and impact.",
         services: [
-          "Hackathons & innovation events",
-          "Festivals & cultural experiences",
-          "Workshops & team building",
-          "Corporate offsites & retreats",
+          "Web design & development",
+          "Content production & strategy",
+          "Online presence optimization",
+          "Creative collaborations",
         ],
       },
     },
     es: {
       title: "Qué Hacemos",
       forCreators: {
-        title: "Para Creadores",
+        title: "Eventos",
         description:
-          "Empoderamos artistas y creadores independientes con herramientas para crecer y mostrar su trabajo.",
+          "Experiencias culturales y corporativas que reúnen personas y crean conexiones duraderas.",
         services: [
-          "Landing pages y presencia digital",
-          "Estrategia en redes sociales y contenido",
-          "Gestión y optimización de plataformas",
-          "Identidad visual y branding",
+          "Eventos culturales y festivales",
+          "Activaciones de marca",
+          "Talleres y conferencias",
+          "Experiencias comunitarias",
         ],
       },
       forBrands: {
-        title: "Para Marcas y Empresas",
+        title: "Proyectos Digitales",
         description:
-          "Diseñamos experiencias culturales que profundizan la conexión con la audiencia.",
+          "Soluciones digitales que ayudan a marcas y creadores a crecer su presencia e impacto.",
         services: [
-          "Hackathons y eventos de innovación",
-          "Festivales y experiencias culturales",
-          "Talleres y team building",
-          "Retiros corporativos y offsites",
+          "Diseño y desarrollo web",
+          "Producción de contenido y estrategia",
+          "Optimización de presencia online",
+          "Colaboraciones creativas",
         ],
       },
     },

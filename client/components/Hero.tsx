@@ -9,18 +9,18 @@ export default function Hero({ language }: HeroProps) {
     en: {
       h1: "Maurique Labs",
       subheadline:
-        "Empowering creators through experiences, community, and digital presence.",
+        "A creative agency connecting music, technology, and culture through events and digital projects.",
       description:
-        "We design and produce cultural and corporate events that connect brands, artists, and audiences, while helping creators grow their digital identity.",
+        "We design and produce cultural and corporate events that bring together creators, brands, and communities. We also develop digital projects that help them grow, from web design and content creation to innovative collaborations that blend art and technology.",
       ctaPrimary: "See Our Work",
       ctaSecondary: "Let's Collaborate",
     },
     es: {
       h1: "Maurique Labs",
       subheadline:
-        "Empoderando creadores a través de experiencias, comunidad y presencia digital.",
+        "Una agencia creativa que conecta música, tecnología y cultura a través de eventos y proyectos digitales.",
       description:
-        "Diseñamos y producimos eventos culturales y corporativos que conectan marcas, artistas y audiencias, mientras ayudamos a los creadores a crecer en su identidad digital.",
+        "Diseñamos y producimos eventos culturales y corporativos que reúnen creadores, marcas y comunidades. También desarrollamos proyectos digitales que los ayudan a crecer, desde diseño web y creación de contenido hasta colaboraciones innovadoras que mezclan arte y tecnología.",
       ctaPrimary: "Ver Nuestro Trabajo",
       ctaSecondary: "Colaboremos",
     },
